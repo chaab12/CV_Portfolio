@@ -112,7 +112,7 @@
                 <div class="orbit">
 
                 <span class="tech-icon">
-                    <img src="icons/python.svg" alt="Postgres">
+                    <img src="icons/python.svg" alt="Python">
                 </span>
 
                 <span class="tech-icon">
@@ -127,7 +127,7 @@
                     <img src="icons/postgres.svg" alt="Postgres">
                 </span>
                 <span class="tech-icon">
-                    <img src="icons/microsoftsqlserver.svg" alt="Postgres">
+                    <img src="icons/microsoftsqlserver.svg" alt="Microsoft SQL Server">
                 </span>
 
                 <span class="tech-icon">
@@ -395,8 +395,21 @@
 
                     <article class="project-card">
 
-                        <div class="project-image">
-                            <span>Fleet Management System</span>
+                        <div class="project-video" data-video="videos/fleet-management.mp4">
+                            
+                            <img
+                                src="videos/thumbnail_img/fleet-management.png"
+                                alt="Fleet Management System"
+                            >
+
+                            <div class="video-overlay">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+
+                            <div class="video-label">
+                                <span>Fleet Management System</span>
+                            </div>
+
                         </div>
 
                         <div class="project-content">
@@ -419,11 +432,6 @@
                                 <span>OWL</span>
 
                             </div>
-
-                            <a href="#" class="project-link">
-                                View Project →
-                            </a>
-
                         </div>
 
                     </article>
@@ -432,8 +440,21 @@
 
                     <article class="project-card">
 
-                        <div class="project-image">
-                            <span>Social Services</span>
+                        <div class="project-video" data-video="videos/oeuvre.mp4">
+                            
+                            <img
+                                src="videos/thumbnail_img/oeuvre.png"
+                                alt="Social Services Management System"
+                            >
+
+                            <div class="video-overlay">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+
+                            <div class="video-label">
+                                <span>Social Services Management System</span>
+                            </div>
+
                         </div>
 
                         <div class="project-content">
@@ -456,11 +477,6 @@
                                 <span>OWL</span>
 
                             </div>
-
-                            <a href="#" class="project-link">
-                                View Project →
-                            </a>
-
                         </div>
 
                     </article>
@@ -469,8 +485,21 @@
 
                     <article class="project-card">
 
-                        <div class="project-image">
-                            <span>Occupational Medicine</span>
+                        <div class="project-video" data-video="videos/medcin_travail.mp4">
+
+                            <img
+                                src="videos/thumbnail_img/medical.png"
+                                alt="Occupational Medicine Management System"
+                            >
+
+                            <div class="video-overlay">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+
+                            <div class="video-label">
+                                <span>Occupational Medicine Management System</span>
+                            </div>
+
                         </div>
 
                         <div class="project-content">
@@ -495,9 +524,7 @@
 
                             </div>
 
-                            <a href="#" class="project-link">
-                                View Project →
-                            </a>
+                            
 
                         </div>
 
@@ -536,7 +563,7 @@
                     </p>
 
                     <span>
-                        20XX - 20XX
+                        2016 - 2022
                     </span>
 
                 </div>
@@ -625,12 +652,43 @@
     <footer>
 
         <p>
-            © 2026 Your Name. All rights reserved.
+            © 2026 Chaab Zakaria Nouh. All rights reserved.
         </p>
 
     </footer>
 
+    <div class="video-modal" id="videoModal">
 
+        <div class="video-modal-content">
+
+            <div class="video-modal-header">
+
+                <h3 id="videoModalTitle">
+                    Project
+                </h3>
+
+                <button
+                    class="video-modal-close"
+                    id="videoModalClose"
+                    aria-label="Close video"
+                >
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+
+            </div>
+
+
+            <video id="projectVideo" controls>
+
+                <source src="" type="video/mp4">
+
+                Your browser does not support the video tag.
+
+            </video>
+
+        </div>
+
+    </div>
 
     <script src="cvPortfolio.js"></script>
 

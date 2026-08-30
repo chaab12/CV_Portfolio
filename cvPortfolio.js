@@ -92,3 +92,65 @@ function animateOrbit() {
 }
 
 animateOrbit();
+
+
+const videoModal = document.querySelector("#videoModal");
+const videoModalClose = document.querySelector("#videoModalClose");
+const projectVideo = document.querySelector("#projectVideo");
+const projectVideos = document.querySelectorAll(".project-video");
+const videoModalTitle = document.querySelector("#videoModalTitle");
+
+
+// Open video modal
+projectVideos.forEach((project) => {
+
+    project.addEventListener("click", () => {
+
+        const videoPath = project.dataset.video;
+
+        const projectTitle =
+            project.querySelector(".video-label span").textContent;
+
+
+        videoModalTitle.textContent = projectTitle;
+
+
+        projectVideo.querySelector("source").src = videoPath;
+
+        projectVideo.load();
+
+        videoModal.classList.add("active");
+
+        projectVideo.play();
+
+    });
+
+});
+
+// Close modal
+function closeVideoModal() {
+
+    videoModal.classList.remove("active");
+
+    projectVideo.pause();
+
+    projectVideo.currentTime = 0;
+
+    projectVideo.querySelector("source").src = "";
+
+    projectVideo.load();
+
+}
+
+
+videoModalClose.addEventListener("click", closeVideoModal);
+
+
+// Close when clicking outside the video
+videoModal.addEventListener("click", (event) => {
+
+    if (event.target === videoModal) {
+        closeVideoModal();
+    }
+
+});
