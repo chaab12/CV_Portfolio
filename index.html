@@ -16,6 +16,8 @@
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
     >
+<base target="_blank">
+<base target="_blank">
 </head>
 
 
@@ -27,27 +29,27 @@
         <ul class="nav-links">
 
             <li>
-                <a href="#about">About</a>
+                <a href="#about" target="_self">About</a>
             </li>
 
             <li>
-                <a href="#experience">Experience</a>
+                <a href="#experience" target="_self">Experience</a>
             </li>
 
             <li>
-                <a href="#skills">Skills</a>
+                <a href="#skills" target="_self">Skills</a>
             </li>
 
             <li>
-                <a href="#projects">Projects</a>
+                <a href="#projects" target="_self">Projects</a>
             </li>
 
             <li>
-                <a href="#education">Education</a>
+                <a href="#education" target="_self">Education</a>
             </li>
 
             <li>
-                <a href="#contact">Contact</a>
+                <a href="#contact" target="_self">Contact</a>
             </li>
 
         </ul>
@@ -109,48 +111,98 @@
 
             <div class="hero-image">
 
-                <div class="orbit">
+                <!-- 3D Orbital Rings -->
+                <div class="orbit-ring orbit-ring-1">
+                    <div class="ring-dot ring-dot-1"></div>
+                    <div class="ring-dot ring-dot-2"></div>
+                </div>
+                <div class="orbit-ring orbit-ring-2">
+                    <div class="ring-dot ring-dot-3"></div>
+                    <div class="ring-dot ring-dot-4"></div>
+                </div>
+                <div class="orbit-ring orbit-ring-3"></div>
 
-                <span class="tech-icon">
-                    <img src="icons/python.svg" alt="Python">
-                </span>
+                <!-- Orbit Layer 1 (Inner) -->
+                <div class="orbit-layer orbit-layer-1" data-direction="1" data-speed="0.3" data-radius-x="160" data-self-speed="0.8"
+                    data-radius-z="100" data-tilt="25"  
+                    data-rotate-x="0"
+                    data-rotate-y="0"
+                    data-rotate-z="0">
+                    <span class="tech-icon">
+                        <img src="icons/python.svg" alt="Python">
+                    </span>
+                    <span class="tech-icon">
+                        <img src="icons/odoo.svg" alt="Odoo">
+                    </span>
+                    <span class="tech-icon">
+                        <img src="icons/django.svg" alt="django">
+                    </span>
+                     <span class="tech-icon">
+                        <img src="icons/postgres.svg" alt="Postgres">
+                    </span>
+                    <span class="tech-icon">
+                        <img src="icons/microsoftsqlserver.svg" alt="Microsoft SQL Server">
+                    </span>
+                    <span class="tech-icon">
+                        <img src="icons/javascript.svg" alt="JS">
+                    </span>
+                </div>
 
-                <span class="tech-icon">
-                    <img src="icons/odoo.svg" alt="Odoo">
-                </span>
+                <!-- Orbit Layer 2 (Middle) -->
+                <div class="orbit-layer orbit-layer-2" data-direction="-1" data-speed="0.5" data-self-speed="1.6"
+                    data-radius-x="220" data-radius-z="160" data-tilt="-35" data-rotation="60"
+                    data-rotate-x="0"
+                    data-rotate-y="45"
+                    data-rotate-z="-40"
+                >
+                    <span class="tech-icon">
+                        <img src="icons/postgres.svg" alt="Postgres">
+                    </span>
+                    <span class="tech-icon">
+                        <img src="icons/microsoftsqlserver.svg" alt="Microsoft SQL Server">
+                    </span>
+                    <span class="tech-icon">
+                        <img src="icons/javascript.svg" alt="JS">
+                    </span>
+                    <span class="tech-icon">
+                        <img src="icons/html5.svg" alt="HTML">
+                    </span>
+                    <span class="tech-icon">
+                        <img src="icons/css3.svg" alt="CSS">
+                    </span>
+                    <span class="tech-icon">
+                        <img src="icons/git.svg" alt="GIT">
+                    </span>
+                </div>
 
-                <span class="tech-icon">
-                    <img src="icons/django.svg" alt="django">
-                </span>
+                <!-- Orbit Layer 3 (Outer) -->
+                <div class="orbit-layer orbit-layer-3" data-direction="1" data-speed="0.7" 
+                    data-radius-x="300" data-radius-z="220" data-tilt="55" 
+                    data-rotate-x="0"
+                    data-rotate-y="-45"
+                    data-rotate-z="40">
+                    <span class="tech-icon">
+                        <img src="icons/html5.svg" alt="HTML">
+                    </span>
+                    <span class="tech-icon">
+                        <img src="icons/css3.svg" alt="CSS">
+                    </span>
+                    <span class="tech-icon">
+                        <img src="icons/git.svg" alt="GIT">
+                    </span>
+                    <span class="tech-icon">
+                        <img src="icons/postgres.svg" alt="Postgres">
+                    </span>
+                    <span class="tech-icon">
+                        <img src="icons/microsoftsqlserver.svg" alt="Microsoft SQL Server">
+                    </span>
+                    <span class="tech-icon">
+                        <img src="icons/javascript.svg" alt="JS">
+                    </span>
+                </div>
 
-                <span class="tech-icon">
-                    <img src="icons/postgres.svg" alt="Postgres">
-                </span>
-                <span class="tech-icon">
-                    <img src="icons/microsoftsqlserver.svg" alt="Microsoft SQL Server">
-                </span>
-
-                <span class="tech-icon">
-                    <img src="icons/javascript.svg" alt="JS">
-                </span>
-
-                <span class="tech-icon">
-                    <img src="icons/html5.svg" alt="HTML">
-                </span>
-
-                <span class="tech-icon">
-                    <img src="icons/css3.svg" alt="CSS">
-                </span>
-
-                <span class="tech-icon">
-                    <img src="icons/git.svg" alt="GIT">
-                </span>
-
-            </div>
-
-               
-
-                <img 
+                <!-- Profile Image -->
+                <img
                     src="profile.png"
                     alt="Your Name"
                     class="profile-image"
@@ -280,100 +332,139 @@
 
 
         <!-- =========================
-             SKILLS
+        SKILLS
         ========================== -->
 
         <section id="skills" class="section reveal">
 
             <div class="container">
 
-                <h2>
-                    Technical Skills
-                </h2>
+                <h2>SKILLS</h2>
+                <p style="color: var(--text-muted); margin-bottom: 30px; font-size: 1.05rem;">
+                    Languages, frameworks & tools
+                </p>
 
+                <div class="skills-ecosystem">
 
-                <div class="skills-grid">
-
-
-                    <div class="skill-card">
-
-                        <h3>
-                            Frontend
-                        </h3>
-
-                        <p>
-                            HTML5 · CSS3 · JavaScript · OWL
-                        </p>
-
+                    <div class="skill-category">
+                        <div class="skill-cat-header">
+                            <h3>Frontend</h3>
+                            <span class="skill-count">4</span>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="" width="16" height="16" loading="lazy">
+                                HTML5
+                            </span>
+                            <span class="skill-tag">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="" width="16" height="16" loading="lazy">
+                                CSS3
+                            </span>
+                            <span class="skill-tag">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="" width="16" height="16" loading="lazy">
+                                JavaScript
+                            </span>
+                            <span class="skill-tag">
+                                <i class="fa-solid fa-cube"></i>
+                                OWL
+                            </span>
+                        </div>
                     </div>
 
-
-                    <div class="skill-card">
-
-                        <h3>
-                            Backend
-                        </h3>
-
-                        <p>
-                            Python · Django · Odoo ERP
-                        </p>
-
+                    <div class="skill-category">
+                        <div class="skill-cat-header">
+                            <h3>Backend</h3>
+                            <span class="skill-count">3</span>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="" width="16" height="16" loading="lazy">
+                                Python
+                            </span>
+                            <span class="skill-tag">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="" width="16" height="16" loading="lazy">
+                                Django
+                            </span>
+                            <span class="skill-tag">
+                                <i class="fa-solid fa-building"></i>
+                                Odoo ERP
+                            </span>
+                        </div>
                     </div>
 
-
-                    <div class="skill-card">
-
-                        <h3>
-                            Databases
-                        </h3>
-
-                        <p>
-                            PostgreSQL · Microsoft SQL Server
-                        </p>
-
+                    <div class="skill-category">
+                        <div class="skill-cat-header">
+                            <h3>Databases</h3>
+                            <span class="skill-count">2</span>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="" width="16" height="16" loading="lazy">
+                                PostgreSQL
+                            </span>
+                            <span class="skill-tag">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg" alt="" width="16" height="16" loading="lazy">
+                                SQL Server
+                            </span>
+                        </div>
                     </div>
 
-
-                    <div class="skill-card">
-
-                        <h3>
-                            Tools
-                        </h3>
-
-                        <p>
-                            Git · GitHub
-                        </p>
-
+                    <div class="skill-category">
+                        <div class="skill-cat-header">
+                            <h3>Tools</h3>
+                            <span class="skill-count">2</span>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="" width="16" height="16" loading="lazy">
+                                Git
+                            </span>
+                            <span class="skill-tag">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="" width="16" height="16" loading="lazy">
+                                GitHub
+                            </span>
+                        </div>
                     </div>
 
-
-                    <div class="skill-card">
-
-                        <h3>
-                            Microsoft Office
-                        </h3>
-
-                        <p>
-                            Word · Excel · PowerPoint
-                        </p>
-
+                    <div class="skill-category">
+                        <div class="skill-cat-header">
+                            <h3>Microsoft Office</h3>
+                            <span class="skill-count">3</span>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">
+                                <i class="fa-solid fa-file-word"></i>
+                                Word
+                            </span>
+                            <span class="skill-tag">
+                                <i class="fa-solid fa-file-excel"></i>
+                                Excel
+                            </span>
+                            <span class="skill-tag">
+                                <i class="fa-solid fa-file-powerpoint"></i>
+                                PowerPoint
+                            </span>
+                        </div>
                     </div>
 
-
-                    <div class="skill-card">
-
-                        <h3>
-                            Next Technologies
-                        </h3>
-
-                        <p>
-                            React · Node.js
-                        </p>
-
+                    <div class="skill-category">
+                        <div class="skill-cat-header">
+                            <h3>Next Technologies</h3>
+                            <span class="skill-count">2</span>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="" width="16" height="16" loading="lazy">
+                                React
+                            </span>
+                            <span class="skill-tag">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="" width="16" height="16" loading="lazy">
+                                Node.js
+                            </span>
+                        </div>
                     </div>
 
                 </div>
-
             </div>
 
         </section>
@@ -396,7 +487,7 @@
                     <article class="project-card">
 
                         <div class="project-video" data-video="https://mbmsmcfktfjmxfys.public.blob.vercel-storage.com/fleet-management.mp4">
-                            
+
                             <img
                                 src="videos/thumbnail_img/fleet-management.png"
                                 alt="Fleet Management System"
@@ -441,7 +532,7 @@
                     <article class="project-card">
 
                         <div class="project-video" data-video="https://mbmsmcfktfjmxfys.public.blob.vercel-storage.com/oeuvre.mp4">
-                            
+
                             <img
                                 src="videos/thumbnail_img/oeuvre.png"
                                 alt="Social Services Management System"
@@ -524,7 +615,7 @@
 
                             </div>
 
-                            
+
 
                         </div>
 
