@@ -101,6 +101,12 @@ header {
     text-decoration: none;
 }
 
+.logo img {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+
+}
 
 .nav-links {
     display: flex;
